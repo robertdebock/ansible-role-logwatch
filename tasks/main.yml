@@ -1,0 +1,14 @@
+---
+# tasks file for logwatch
+- name: install logwatch
+  package:
+    name: "{{ logwatch_packages }}"
+    state: present
+  register: logwatch_install_logwatch
+  until: logwatch_install_logwatch is succeeded
+  retries: 3
+
+- name: configure logwatch
+  template:
+    src: "{{ logwatch_config_file }}.j2"
+    dest: "{{ logwatch_config_directory }}/{{ logwatch_config_file }}"

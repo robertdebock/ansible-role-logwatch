@@ -1,0 +1,14 @@
+---
+# vars file for logwatch
+_logwatch_packages:
+  default:
+    - logwatch
+
+logwatch_packages: "{{ _logwatch_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_logwatch_packages[ansible_distribution] | default(_logwatch_packages['default'])) }}"
+
+_logwatch_config_directory:
+  default: /usr/share/logwatch/default.conf
+
+logwatch_config_directory: "{{ _logwatch_config_directory[ansible_distribution] | default(_logwatch_config_directory['default']) }}"
+
+logwatch_config_file: logwatch.conf
