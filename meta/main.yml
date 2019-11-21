@@ -32,7 +32,6 @@ galaxy_info:
     - logwatch
     - archlinux
     - centos
-    - opensuse
     - rhel
     - ubuntu
 
