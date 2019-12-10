@@ -87,22 +87,20 @@ Compatibility
 
 This role has been tested on these [container images](https://hub.docker.com/):
 
-|container|tag|allow_failures|
-|---------|---|--------------|
-|amazonlinux|1|no|
-|amazonlinux|latest|no|
-|debian|unstable|yes|
-|debian|latest|no|
-|fedora|latest|no|
-|fedora|rawhide|yes|
-|opensuse|latest|no|
-|ubuntu|latest|no|
+|container|tags|
+|---------|----|
+|amazon|all|
+|archlinux|all|
+|debian|all|
+|fedora|all|
+|opensuse|all|
+|ubuntu|artful, bionic|
 
-This role has been tested on these Ansible versions:
+The minimum version of Ansible required is 2.8 but tests have been done to:
 
-- ansible>=2.8, <2.9
-- ansible>=2.9
-- git+https://github.com/ansible/ansible.git@devel
+- The previous version, on version lower.
+- The current version.
+- The development version.
 
 Exceptions
 ----------
@@ -148,16 +146,6 @@ tox
 image="centos" tox
 # Or customize more:
 image="debian" tag="stable" tox
-```
-
-Modules
--------
-
-This role uses the following modules:
-```yaml
----
-- package
-- template
 ```
 
 License
