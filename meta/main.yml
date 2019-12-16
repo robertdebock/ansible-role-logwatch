@@ -30,7 +30,6 @@ galaxy_info:
 
   galaxy_tags:
     - logwatch
-    - archlinux
     - centos
 
 dependencies: []
