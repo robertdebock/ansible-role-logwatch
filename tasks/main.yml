@@ -1,5 +1,8 @@
 ---
 # tasks file for logwatch
+- name: include assert.yml
+  include_tasks: assert.yml
+
 - name: install logwatch
   package:
     name: "{{ logwatch_packages }}"
