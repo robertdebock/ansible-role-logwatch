@@ -55,7 +55,7 @@ These variables are set in `defaults/main.yml`:
 # defaults file for logwatch
 
 logwatch_mailto: root
-logwatch_mailfrom: LogwatchA
+logwatch_mailfrom: Logwatch
 
 # The time range for the report, either "all", "today" or "yesterday".
 logwatch_range: yesterday
