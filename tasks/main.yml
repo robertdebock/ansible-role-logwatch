@@ -7,9 +7,6 @@
   package:
     name: "{{ logwatch_packages }}"
     state: present
-  register: logwatch_install_logwatch
-  until: logwatch_install_logwatch is succeeded
-  retries: 3
 
 - name: configure logwatch
   template:
