@@ -4,12 +4,14 @@
     that:
       - logwatch_mailto is defined
       - logwatch_mailto | length > 0
+    quiet: yes
 
 - name: test if logwatch_mailfrom is set correctly
   assert:
     that:
       - logwatch_mailfrom is defined
       - logwatch_mailfrom | length > 0
+    quiet: yes
 
 - name: test if logwatch_range is set correctly
   assert:
@@ -17,6 +19,7 @@
       - logwatch_range is defined
       - logwatch_range | length > 0
       - logwatch_range in ["all", "today", "yesterday"]
+    quiet: yes
 
 - name: test if logwatch_detail is set correctly
   assert:
@@ -24,6 +27,7 @@
       - logwatch_detail is defined
       - logwatch_detail | length > 0
       - logwatch_detail in ["Low", "Med", "High"]
+    quiet: yes
   when: 
     - not logwatch_detail | int
 
@@ -33,6 +37,7 @@
       - logwatch_detail is defined
       - logwatch_detail | int >= 0
       - logwatch_detail | int <= 10
+    quiet: yes
   when:
     - logwatch_detail | int
 
@@ -41,3 +46,4 @@
     that:
       - logwatch_service is defined
       - logwatch_service | length > 0
+    quiet: yes
