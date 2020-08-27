@@ -12,3 +12,4 @@
   template:
     src: "{{ logwatch_config_file }}.j2"
     dest: "{{ logwatch_config_directory }}/{{ logwatch_config_file }}"
+    mode: "0644"
