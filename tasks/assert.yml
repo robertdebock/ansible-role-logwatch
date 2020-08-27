@@ -28,7 +28,7 @@
       - logwatch_detail | length > 0
       - logwatch_detail in ["Low", "Med", "High"]
     quiet: yes
-  when: 
+  when:
     - not logwatch_detail | int
 
 - name: test if logwatch_detail is set correctly if integer
