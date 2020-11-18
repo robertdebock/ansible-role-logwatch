@@ -31,12 +31,11 @@
   assert:
     that:
       - logwatch_detail is defined
-      - logwatch_detail is number
       - logwatch_detail >= 0
       - logwatch_detail <= 10
     quiet: yes
   when:
-    - logwatch_detail
+    - logwatch_detail is number
 
 - name: test if logwatch_service is set correctly
   assert:
