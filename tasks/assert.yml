@@ -1,4 +1,5 @@
 ---
+
 - name: test if logwatch_mailto is set correctly
   assert:
     that:
