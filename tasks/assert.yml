@@ -4,18 +4,21 @@
   assert:
     that:
       - logwatch_mailto is defined
+      - logwatch_mailto is string
     quiet: yes
 
 - name: test if logwatch_mailfrom is set correctly
   assert:
     that:
       - logwatch_mailfrom is defined
+      - logwatch_mailfrom is string
     quiet: yes
 
 - name: test if logwatch_range is set correctly
   assert:
     that:
       - logwatch_range is defined
+      - logwatch_range is string
       - logwatch_range in [ "all", "today", "yesterday" ]
     quiet: yes
 
@@ -23,6 +26,7 @@
   assert:
     that:
       - logwatch_detail is defined
+      - logwatch_detail is string
       - logwatch_detail in [ "Low", "Med", "High" ]
     quiet: yes
   when:
@@ -42,4 +46,5 @@
   assert:
     that:
       - logwatch_service is defined
+      - logwatch_service is string
     quiet: yes
