@@ -2,9 +2,9 @@
 
 Install and configure logwatch on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-logwatch.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-logwatch)|[![github](https://github.com/robertdebock/ansible-role-logwatch/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-logwatch/actions)|[![quality](https://img.shields.io/ansible/quality/39152)](https://galaxy.ansible.com/robertdebock/logwatch)|[![downloads](https://img.shields.io/ansible/role/d/39152)](https://galaxy.ansible.com/robertdebock/logwatch)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-logwatch.svg)](https://github.com/robertdebock/ansible-role-logwatch/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-logwatch.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-logwatch)|[![github](https://github.com/robertdebock/ansible-role-logwatch/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-logwatch/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-logwatch/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-logwatch)|[![quality](https://img.shields.io/ansible/quality/39152)](https://galaxy.ansible.com/robertdebock/logwatch)|[![downloads](https://img.shields.io/ansible/role/d/39152)](https://galaxy.ansible.com/robertdebock/logwatch)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-logwatch.svg)](https://github.com/robertdebock/ansible-role-logwatch/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
