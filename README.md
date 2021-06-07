@@ -32,6 +32,14 @@ The machine needs to be prepared in CI this is done using `molecule/resources/pr
     - role: robertdebock.bootstrap
     - role: robertdebock.core_dependencies
     - role: robertdebock.postfix
+      postfix_relayhost: "[relay.example.com]"
+      postfix_myhostname: "smtp.example.com"
+      postfix_mydomain: "example.com"
+      postfix_myorigin: "example.com"
+      postfix_aliases:
+        - name: root
+          destination: test@example.com
+
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
