@@ -39,7 +39,6 @@ The machine needs to be prepared in CI this is done using `molecule/resources/pr
       postfix_aliases:
         - name: root
           destination: test@example.com
-
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
