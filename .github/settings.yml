@@ -5,4 +5,4 @@
 repository:
   description: Install and configure logwatch on your system.
   homepage: https://robertdebock.nl/
-  topics: logwatch, ansible, molecule, tox, playbook, hacktoberfest
+  topics: logwatch, ansible, molecule, tox, playbook
