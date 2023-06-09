@@ -5,6 +5,7 @@
     that:
       - logwatch_mailto is defined
       - logwatch_mailto is string
+      - logwatch_mailto is not none
     quiet: yes
 
 - name: assert | Test if logwatch_mailfrom is set correctly
@@ -12,6 +13,7 @@
     that:
       - logwatch_mailfrom is defined
       - logwatch_mailfrom is string
+      - logwatch_mailfrom is not none
     quiet: yes
 
 - name: assert | Test if logwatch_range is set correctly
@@ -47,4 +49,5 @@
     that:
       - logwatch_service is defined
       - logwatch_service is string
+      - logwatch_service is not none
     quiet: yes
