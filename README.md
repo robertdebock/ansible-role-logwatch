@@ -1,4 +1,4 @@
-# Ansible role [logwatch](#logwatch)
+# [Ansible role logwatch](#logwatch)
 
 Install and configure logwatch on your system.
 
