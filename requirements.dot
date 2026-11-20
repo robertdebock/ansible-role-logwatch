@@ -1,0 +1,13 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "logwatch" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.core_dependencies" [fillcolor=green style=filled]
+    "robertdebock.postfix" [fillcolor=green style=filled]
+  }
+  "logwatch" -> "robertdebock.bootstrap"
+  "logwatch" -> "robertdebock.core_dependencies"
+  "logwatch" -> "robertdebock.postfix"
+}
